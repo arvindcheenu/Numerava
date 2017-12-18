@@ -1,5 +1,5 @@
 package humanize;
-public class Numeral {
+public class Numerava {
 	/* CONSTANTS */
 	public static final String[] units = { "", "One", "Two", "Three", "Four",
 			"Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve",
@@ -15,7 +15,7 @@ public class Numeral {
 	private String cardinal;
 	private String nominal;
 	private String format;
-	public Numeral() {
+	public Numerava() {
 		this.number = 0;
 		this.contract = "0th";
 		this.ordinal = "zeroth";
@@ -24,7 +24,7 @@ public class Numeral {
 		this.format = ""; //TODO add formats for formatting numbers
 
 	}
-	public Numeral(int number) {
+	public Numerava(int number) {
 		this.number = number;
 		this.contract = this.toShortOrdinal();
 		this.ordinal = this.toOrdinal();
@@ -32,7 +32,7 @@ public class Numeral {
 		this.nominal = this.toNominal();
 		this.format = "";
 	}
-	public Numeral set(int number) {
+	public Numerava set(int number) {
 		this.number = number;
 		return this;
 	}
