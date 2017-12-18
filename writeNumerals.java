@@ -1,13 +1,13 @@
 import static java.lang.System.*;
 import java.util.Scanner;
-import humanize.Numeral;
+import humanize.Numerava;
 
 public class writeNumerals {
 	private static Scanner scan = new Scanner(in);
-	private static Numeral number;
+	private static Numerava number;
 	public static void main (String[] args) {
 		out.print("Enter Number : ");
-		number = new Numeral(scan.nextInt());
+		number = new Numerava(scan.nextInt());
 		/*
 		 * The Direct assignment of functions to members of constructor
 		 * calls the respective functions and assigns their returned
